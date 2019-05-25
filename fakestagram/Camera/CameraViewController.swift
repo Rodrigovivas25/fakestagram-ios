@@ -8,14 +8,14 @@
 
 import UIKit
 
-class CameraViewController: UIViewController {
+class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     let client = CreatePostClient()
-    
+    var imageController = UIImagePickerController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
@@ -27,6 +27,13 @@ class CameraViewController: UIViewController {
         }
                 
     }
+    
+    @IBAction func chooseImage(_ sender: Any) {
+        imageController.delegate = self
+        imageController.sourceType = .photoLibrary
+        present(imageController, animated: true, completion: nil)
+    }
+    
     
     /*
     // MARK: - Navigation
