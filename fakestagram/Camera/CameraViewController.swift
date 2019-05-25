@@ -11,7 +11,8 @@ import UIKit
 class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     let client = CreatePostClient()
-    var imageController = UIImagePickerController()
+    let imageController = UIImagePickerController()
+    let imagen = UIImage()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +35,16 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         present(imageController, animated: true, completion: nil)
     }
     
-    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let imagenSeleccionada = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
+            let imgBase64 = imagenSeleccionada.encodedBase64()
+            let payload = CreatePostBase64(title: ":p", imageData: imgBase64!)
+            client.create(payload: payload){post in
+                print(post)
+            }
+            dismiss(animated: true, completion: nil)
+        }
+    }
     /*
     // MARK: - Navigation
 
