@@ -10,15 +10,15 @@ import Foundation
 
 class HTTPResponse {
     let rawResponse: HTTPURLResponse
-    
+
     init(reponse: HTTPURLResponse) {
         self.rawResponse = reponse
     }
-    
+
     lazy var status: Status = {
         return Status(rawValue: self.rawResponse.statusCode)
     }()
-    
+
     func successful() -> Bool {
         return status == Status.success
     }

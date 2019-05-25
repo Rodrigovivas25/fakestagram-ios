@@ -7,10 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E04FB2DC2249F2AB00B81C8A /* CodableStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04FB2DB2249F2AB00B81C8A /* CodableStore.swift */; };
+		CC9BF1B317F7279476CA2F32 /* Pods_fakestagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7166E6CADAC9D4F1575D2466 /* Pods_fakestagram.framework */; };
+		D42C981DA89623FAA214F760 /* Pods_fakestagramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4E42AF7482CA72B42CDEA0 /* Pods_fakestagramTests.framework */; };
+		D9DDEC802274A4B000930030 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DDEC7F2274A4B000930030 /* CameraViewController.swift */; };
+		D9DDEC822274A72B00930030 /* UIImage+base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DDEC812274A72B00930030 /* UIImage+base64.swift */; };
+		D9DDEC842274BDFC00930030 /* CreatePostClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DDEC832274BDFC00930030 /* CreatePostClient.swift */; };
+		E01AC9D32273C39900D5F13C /* ImageStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01AC9D22273C39900D5F13C /* ImageStorage.swift */; };
+		E01AC9D52273C79E00D5F13C /* DataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01AC9D42273C79E00D5F13C /* DataContainer.swift */; };
+		E01AC9D72273CD6700D5F13C /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01AC9D62273CD6700D5F13C /* ImageCache.swift */; };
+		E04FB2DC2249F2AB00B81C8A /* CodableStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04FB2DB2249F2AB00B81C8A /* CodableStorage.swift */; };
 		E04FB2DE2249F2D300B81C8A /* StorageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04FB2DD2249F2D300B81C8A /* StorageType.swift */; };
-		E04FB2E02249F42A00B81C8A /* ItemStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04FB2DF2249F42A00B81C8A /* ItemStorage.swift */; };
-		E04FB2E22249F52900B81C8A /* AccountStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04FB2E12249F52900B81C8A /* AccountStorage.swift */; };
+		E07D9031226238C5004BCDE3 /* AccountClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07D9030226238C5004BCDE3 /* AccountClient.swift */; };
+		E07D903322623A00004BCDE3 /* TimelineClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07D903222623A00004BCDE3 /* TimelineClient.swift */; };
 		E0BB9748223F444B00D028A1 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BB9747223F444B00D028A1 /* Client.swift */; };
 		E0BB974A223F449700D028A1 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BB9749223F449700D028A1 /* Secrets.swift */; };
 		E0BB974D223F45EA00D028A1 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BB974C223F45EA00D028A1 /* Account.swift */; };
@@ -37,6 +45,10 @@
 		E0DDFA2E223E0EF2009EB136 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DDFA2D223E0EF2009EB136 /* TimelineViewController.swift */; };
 		E0DDFA31223E181C009EB136 /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DDFA2F223E181C009EB136 /* PostDetailViewController.swift */; };
 		E0DDFA32223E181C009EB136 /* PostDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0DDFA30223E181C009EB136 /* PostDetailViewController.xib */; };
+		E0F4B04222700427000975C0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F4B04122700427000975C0 /* ProfileViewController.swift */; };
+		F60667592274CEB9004563D9 /* Like.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60667582274CEB9004563D9 /* Like.swift */; };
+		F606675B2274CEEF004563D9 /* LikeClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F606675A2274CEEF004563D9 /* LikeClient.swift */; };
+		F65943FC227CEDF100D46C5E /* NotificationNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65943FB227CEDF100D46C5E /* NotificationNames.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,10 +62,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E04FB2DB2249F2AB00B81C8A /* CodableStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableStore.swift; sourceTree = "<group>"; };
+		341DED3272275E0EA576A2A3 /* Pods-fakestagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fakestagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-fakestagram/Pods-fakestagram.release.xcconfig"; sourceTree = "<group>"; };
+		5370BA1623C8761B8F15A3A5 /* Pods-fakestagramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fakestagramTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fakestagramTests/Pods-fakestagramTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7166E6CADAC9D4F1575D2466 /* Pods_fakestagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fakestagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B4E42AF7482CA72B42CDEA0 /* Pods_fakestagramTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fakestagramTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DDEC7F2274A4B000930030 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		D9DDEC812274A72B00930030 /* UIImage+base64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+base64.swift"; sourceTree = "<group>"; };
+		D9DDEC832274BDFC00930030 /* CreatePostClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostClient.swift; sourceTree = "<group>"; };
+		E01AC9D22273C39900D5F13C /* ImageStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStorage.swift; sourceTree = "<group>"; };
+		E01AC9D42273C79E00D5F13C /* DataContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataContainer.swift; sourceTree = "<group>"; };
+		E01AC9D62273CD6700D5F13C /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		E04FB2DB2249F2AB00B81C8A /* CodableStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableStorage.swift; sourceTree = "<group>"; };
 		E04FB2DD2249F2D300B81C8A /* StorageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageType.swift; sourceTree = "<group>"; };
-		E04FB2DF2249F42A00B81C8A /* ItemStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStorage.swift; sourceTree = "<group>"; };
-		E04FB2E12249F52900B81C8A /* AccountStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountStorage.swift; sourceTree = "<group>"; };
+		E07D9030226238C5004BCDE3 /* AccountClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountClient.swift; sourceTree = "<group>"; };
+		E07D903222623A00004BCDE3 /* TimelineClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineClient.swift; sourceTree = "<group>"; };
 		E0BB9747223F444B00D028A1 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		E0BB9749223F449700D028A1 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		E0BB974C223F45EA00D028A1 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
@@ -84,6 +106,12 @@
 		E0DDFA2D223E0EF2009EB136 /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		E0DDFA2F223E181C009EB136 /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
 		E0DDFA30223E181C009EB136 /* PostDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostDetailViewController.xib; sourceTree = "<group>"; };
+		E0F4B04122700427000975C0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		E68289FA3F6BF9C0F4866C27 /* Pods-fakestagramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fakestagramTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-fakestagramTests/Pods-fakestagramTests.release.xcconfig"; sourceTree = "<group>"; };
+		F60667582274CEB9004563D9 /* Like.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Like.swift; sourceTree = "<group>"; };
+		F606675A2274CEEF004563D9 /* LikeClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeClient.swift; sourceTree = "<group>"; };
+		F65943FB227CEDF100D46C5E /* NotificationNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNames.swift; sourceTree = "<group>"; };
+		F81FCA31F77F51EA825B5934 /* Pods-fakestagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fakestagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fakestagram/Pods-fakestagram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC9BF1B317F7279476CA2F32 /* Pods_fakestagram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,28 +127,51 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D42C981DA89623FAA214F760 /* Pods_fakestagramTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3ED7ECD7816E9688C94A8240 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F81FCA31F77F51EA825B5934 /* Pods-fakestagram.debug.xcconfig */,
+				341DED3272275E0EA576A2A3 /* Pods-fakestagram.release.xcconfig */,
+				5370BA1623C8761B8F15A3A5 /* Pods-fakestagramTests.debug.xcconfig */,
+				E68289FA3F6BF9C0F4866C27 /* Pods-fakestagramTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B9560ABBF24159FF858711F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7166E6CADAC9D4F1575D2466 /* Pods_fakestagram.framework */,
+				9B4E42AF7482CA72B42CDEA0 /* Pods_fakestagramTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9DDEC7E2274A48A00930030 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				D9DDEC7F2274A4B000930030 /* CameraViewController.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
 		E04FB2D72249F1E600B81C8A /* Storages */ = {
 			isa = PBXGroup;
 			children = (
-				E04FB2DA2249F27800B81C8A /* Stores */,
-				E04FB2DF2249F42A00B81C8A /* ItemStorage.swift */,
-			);
-			path = Storages;
-			sourceTree = "<group>";
-		};
-		E04FB2DA2249F27800B81C8A /* Stores */ = {
-			isa = PBXGroup;
-			children = (
-				E04FB2DB2249F2AB00B81C8A /* CodableStore.swift */,
+				E04FB2DB2249F2AB00B81C8A /* CodableStorage.swift */,
+				E01AC9D22273C39900D5F13C /* ImageStorage.swift */,
+				E01AC9D62273CD6700D5F13C /* ImageCache.swift */,
+				E01AC9D42273C79E00D5F13C /* DataContainer.swift */,
 				E04FB2DD2249F2D300B81C8A /* StorageType.swift */,
 			);
-			path = Stores;
+			path = Storages;
 			sourceTree = "<group>";
 		};
 		E0BB9746223F441400D028A1 /* Network */ = {
@@ -137,7 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				E0BB974C223F45EA00D028A1 /* Account.swift */,
-				E04FB2E12249F52900B81C8A /* AccountStorage.swift */,
+				E07D9030226238C5004BCDE3 /* AccountClient.swift */,
 				E0BB9756223F6A3500D028A1 /* AccountRepo.swift */,
 			);
 			path = Account;
@@ -149,6 +201,8 @@
 				E0DDF9EF223DF640009EB136 /* fakestagram */,
 				E0DDFA04223DF642009EB136 /* fakestagramTests */,
 				E0DDF9EE223DF640009EB136 /* Products */,
+				3ED7ECD7816E9688C94A8240 /* Pods */,
+				B9560ABBF24159FF858711F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -165,9 +219,11 @@
 			isa = PBXGroup;
 			children = (
 				E0BB974B223F45DE00D028A1 /* Account */,
+				E0F4B040227003F1000975C0 /* Profile */,
 				E0DDFA16223DFCB6009EB136 /* Post */,
 				E0DDFA2C223E0EDB009EB136 /* Timeline */,
 				E0DDFA23223DFFDB009EB136 /* UIComponents */,
+				D9DDEC7E2274A48A00930030 /* Camera */,
 				E0BB9746223F441400D028A1 /* Network */,
 				E04FB2D72249F1E600B81C8A /* Storages */,
 				E0DDF9F4223DF640009EB136 /* Main.storyboard */,
@@ -181,6 +237,8 @@
 				E0BB9750223F57C400D028A1 /* Date+timestamp.swift */,
 				E0BB9754223F5EDA00D028A1 /* Name.swift */,
 				E0BB9752223F5DFB00D028A1 /* Names.plist */,
+				D9DDEC812274A72B00930030 /* UIImage+base64.swift */,
+				F65943FB227CEDF100D46C5E /* NotificationNames.swift */,
 			);
 			path = fakestagram;
 			sourceTree = "<group>";
@@ -204,6 +262,9 @@
 				E0DDFA28223E03DC009EB136 /* Author.swift */,
 				E0DDFA2F223E181C009EB136 /* PostDetailViewController.swift */,
 				E0DDFA30223E181C009EB136 /* PostDetailViewController.xib */,
+				D9DDEC832274BDFC00930030 /* CreatePostClient.swift */,
+				F60667582274CEB9004563D9 /* Like.swift */,
+				F606675A2274CEEF004563D9 /* LikeClient.swift */,
 			);
 			path = Post;
 			sourceTree = "<group>";
@@ -220,8 +281,17 @@
 			isa = PBXGroup;
 			children = (
 				E0DDFA2D223E0EF2009EB136 /* TimelineViewController.swift */,
+				E07D903222623A00004BCDE3 /* TimelineClient.swift */,
 			);
 			path = Timeline;
+			sourceTree = "<group>";
+		};
+		E0F4B040227003F1000975C0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				E0F4B04122700427000975C0 /* ProfileViewController.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +301,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0DDFA0A223DF642009EB136 /* Build configuration list for PBXNativeTarget "fakestagram" */;
 			buildPhases = (
+				2B35B98333E37AD0700BE6C9 /* [CP] Check Pods Manifest.lock */,
 				E0DDF9E9223DF640009EB136 /* Sources */,
 				E0DDF9EA223DF640009EB136 /* Frameworks */,
 				E0DDF9EB223DF640009EB136 /* Resources */,
+				7B349660708EE5ABEB36155E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -248,6 +320,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0DDFA0D223DF642009EB136 /* Build configuration list for PBXNativeTarget "fakestagramTests" */;
 			buildPhases = (
+				DE3830A87B3625AE51626883 /* [CP] Check Pods Manifest.lock */,
 				E0DDF9FD223DF642009EB136 /* Sources */,
 				E0DDF9FE223DF642009EB136 /* Frameworks */,
 				E0DDF9FF223DF642009EB136 /* Resources */,
@@ -325,32 +398,111 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2B35B98333E37AD0700BE6C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fakestagram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B349660708EE5ABEB36155E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-fakestagram/Pods-fakestagram-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SAMKeychain/SAMKeychain.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SAMKeychain.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fakestagram/Pods-fakestagram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE3830A87B3625AE51626883 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fakestagramTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E0DDF9E9223DF640009EB136 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E01AC9D72273CD6700D5F13C /* ImageCache.swift in Sources */,
 				E0DDFA29223E03DC009EB136 /* Author.swift in Sources */,
 				E0DDFA2B223E04A3009EB136 /* Identicon.swift in Sources */,
 				E0BB974F223F552B00D028A1 /* UIDevice+Info.swift in Sources */,
+				F60667592274CEB9004563D9 /* Like.swift in Sources */,
+				D9DDEC822274A72B00930030 /* UIImage+base64.swift in Sources */,
 				E0BCD23922489DFB00B4E0F6 /* Status.swift in Sources */,
+				F65943FC227CEDF100D46C5E /* NotificationNames.swift in Sources */,
 				E0DDFA21223DFE73009EB136 /* PostCollectionViewCell.swift in Sources */,
 				E04FB2DE2249F2D300B81C8A /* StorageType.swift in Sources */,
+				E01AC9D52273C79E00D5F13C /* DataContainer.swift in Sources */,
 				E0DDFA25223E0017009EB136 /* SVGView.swift in Sources */,
-				E04FB2E22249F52900B81C8A /* AccountStorage.swift in Sources */,
-				E04FB2DC2249F2AB00B81C8A /* CodableStore.swift in Sources */,
+				E04FB2DC2249F2AB00B81C8A /* CodableStorage.swift in Sources */,
 				E0BCD23B22489E2300B4E0F6 /* HttpResponse.swift in Sources */,
+				E0F4B04222700427000975C0 /* ProfileViewController.swift in Sources */,
 				E0DDFA31223E181C009EB136 /* PostDetailViewController.swift in Sources */,
+				F606675B2274CEEF004563D9 /* LikeClient.swift in Sources */,
 				E0BB974D223F45EA00D028A1 /* Account.swift in Sources */,
 				E0BCD23D2248A14300B4E0F6 /* RestClient.swift in Sources */,
-				E04FB2E02249F42A00B81C8A /* ItemStorage.swift in Sources */,
 				E0DDFA18223DFCC8009EB136 /* Post.swift in Sources */,
+				E07D903322623A00004BCDE3 /* TimelineClient.swift in Sources */,
 				E0DDFA2E223E0EF2009EB136 /* TimelineViewController.swift in Sources */,
+				E01AC9D32273C39900D5F13C /* ImageStorage.swift in Sources */,
 				E0BB9755223F5EDA00D028A1 /* Name.swift in Sources */,
 				E0DDF9F1223DF640009EB136 /* AppDelegate.swift in Sources */,
 				E0BB9748223F444B00D028A1 /* Client.swift in Sources */,
 				E0DDFA27223E029A009EB136 /* PostAuthorView.swift in Sources */,
 				E0BB9751223F57C400D028A1 /* Date+timestamp.swift in Sources */,
+				E07D9031226238C5004BCDE3 /* AccountClient.swift in Sources */,
+				D9DDEC842274BDFC00930030 /* CreatePostClient.swift in Sources */,
+				D9DDEC802274A4B000930030 /* CameraViewController.swift in Sources */,
 				E0BB974A223F449700D028A1 /* Secrets.swift in Sources */,
 				E0BB9757223F6A3500D028A1 /* AccountRepo.swift in Sources */,
 			);
@@ -512,42 +664,45 @@
 		};
 		E0DDFA0B223DF642009EB136 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F81FCA31F77F51EA825B5934 /* Pods-fakestagram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 3D72468GWU;
 				INFOPLIST_FILE = fakestagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.3zcurdia.fakestagram;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigo.fakestagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		E0DDFA0C223DF642009EB136 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 341DED3272275E0EA576A2A3 /* Pods-fakestagram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 3D72468GWU;
 				INFOPLIST_FILE = fakestagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.3zcurdia.fakestagram;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigo.fakestagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		E0DDFA0E223DF642009EB136 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5370BA1623C8761B8F15A3A5 /* Pods-fakestagramTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -569,6 +724,7 @@
 		};
 		E0DDFA0F223DF642009EB136 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E68289FA3F6BF9C0F4866C27 /* Pods-fakestagramTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

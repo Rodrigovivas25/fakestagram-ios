@@ -17,7 +17,7 @@ enum Status: Int {
     case serverError // 5xx
     case error   = 10000
     case parserError
-    
+
     public init(rawValue: Int) {
         switch rawValue {
         case 100, 101, 102:

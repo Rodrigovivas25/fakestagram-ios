@@ -1,27 +1,33 @@
 //
-//  PostDetailViewController.swift
+//  CameraViewController.swift
 //  fakestagram
 //
-//  Created by LuisE on 3/16/19.
+//  Created by José Gutiérrez D3 on 4/27/19.
 //  Copyright © 2019 3zcurdia. All rights reserved.
 //
 
 import UIKit
 
-class PostDetailViewController: UIViewController {
-    public var post: Post!
+class CameraViewController: UIViewController {
 
-    @IBOutlet weak var authorView: PostAuthorView!
-    @IBOutlet weak var imgView: UIScrollView!
-    @IBOutlet weak var titleLbl: UITextView!
-    @IBOutlet weak var likeCounterLbl: UILabel!
-
+    let client = CreatePostClient()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
+    
+    @IBAction func onTapSnap(_ sender: Any) {
+        guard let img = UIImage(named: "meper"), let imgBase64 = img.encodedBase64() else { return }
+        let payload = CreatePostBase64(title: "Meper donas - \(Date().currentTimestamp())", imageData: imgBase64)
+        client.create(payload: payload){post in
+            print(post)
+        }
+                
+    }
+    
     /*
     // MARK: - Navigation
 

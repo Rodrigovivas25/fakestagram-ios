@@ -14,7 +14,7 @@ struct Account: Codable {
     let name: String
     let deviceNumber: String
     let deviceModel: String
-    
+
     static func initialize() -> Account {
         return Account(
             id: nil,
@@ -22,5 +22,9 @@ struct Account: Codable {
             deviceNumber: UIDevice.identifier,
             deviceModel: UIDevice.modelName
         )
+    }
+    
+    func toAuthor() -> Author {
+        return Author(id: id ?? "12345", name: name)
     }
 }
