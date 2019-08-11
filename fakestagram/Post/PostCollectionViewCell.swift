@@ -8,19 +8,27 @@
 
 import UIKit
 
-class PostCollectionViewCell: UICollectionViewCell {
+protocol SendDataDelegate{
+    func sendData()
+}
+
+class PostCollectionViewCell: UICollectionViewCell{
+    
+    var delegate: SendDataDelegate?
+    
     static let reuseIdentifier = "postViewCell"
     public var row: Int = -1
     public var post: Post? {
         didSet { updateView() }
     }
-
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var authorView: PostAuthorView!
     @IBOutlet weak var titleLbl: UITextView!
     @IBOutlet weak var likesCountLbl: UILabel!
     @IBOutlet weak var commentsCountLbl: UILabel!
     @IBOutlet weak var likeBtn: UIButton!
+    @IBOutlet weak var commentBtn: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -39,11 +47,12 @@ class PostCollectionViewCell: UICollectionViewCell {
         
     }
     
-    
-    
     @IBAction func tapLike(_ sender: UIButton) {
         guard let post = post else { return }
         let client = LikeUpdaterClient(post: post, row: row)
         self.post = client.call()
     }
+
+    
+    
 }

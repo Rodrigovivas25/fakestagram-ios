@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5063AF6D22F116B300B15E44 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5063AF6C22F116B300B15E44 /* Comment.swift */; };
+		5063AF6F22F1184200B15E44 /* CommentClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5063AF6E22F1184200B15E44 /* CommentClient.swift */; };
+		50D9304122F419E700BA6473 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D9304022F419E700BA6473 /* CommentsViewController.swift */; };
+		50D9304622F8226E00BA6473 /* CommentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D9304422F8226E00BA6473 /* CommentsTableViewCell.swift */; };
+		50D9304D22FDF8C600BA6473 /* CommentsTableClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D9304C22FDF8C600BA6473 /* CommentsTableClient.swift */; };
 		CC9BF1B317F7279476CA2F32 /* Pods_fakestagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7166E6CADAC9D4F1575D2466 /* Pods_fakestagram.framework */; };
 		D42C981DA89623FAA214F760 /* Pods_fakestagramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4E42AF7482CA72B42CDEA0 /* Pods_fakestagramTests.framework */; };
 		D9DDEC802274A4B000930030 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DDEC7F2274A4B000930030 /* CameraViewController.swift */; };
@@ -63,6 +68,11 @@
 
 /* Begin PBXFileReference section */
 		341DED3272275E0EA576A2A3 /* Pods-fakestagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fakestagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-fakestagram/Pods-fakestagram.release.xcconfig"; sourceTree = "<group>"; };
+		5063AF6C22F116B300B15E44 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		5063AF6E22F1184200B15E44 /* CommentClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentClient.swift; sourceTree = "<group>"; };
+		50D9304022F419E700BA6473 /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
+		50D9304422F8226E00BA6473 /* CommentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsTableViewCell.swift; sourceTree = "<group>"; };
+		50D9304C22FDF8C600BA6473 /* CommentsTableClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsTableClient.swift; sourceTree = "<group>"; };
 		5370BA1623C8761B8F15A3A5 /* Pods-fakestagramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fakestagramTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fakestagramTests/Pods-fakestagramTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7166E6CADAC9D4F1575D2466 /* Pods_fakestagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fakestagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B4E42AF7482CA72B42CDEA0 /* Pods_fakestagramTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fakestagramTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -265,6 +275,11 @@
 				D9DDEC832274BDFC00930030 /* CreatePostClient.swift */,
 				F60667582274CEB9004563D9 /* Like.swift */,
 				F606675A2274CEEF004563D9 /* LikeClient.swift */,
+				5063AF6C22F116B300B15E44 /* Comment.swift */,
+				5063AF6E22F1184200B15E44 /* CommentClient.swift */,
+				50D9304022F419E700BA6473 /* CommentsViewController.swift */,
+				50D9304422F8226E00BA6473 /* CommentsTableViewCell.swift */,
+				50D9304C22FDF8C600BA6473 /* CommentsTableClient.swift */,
 			);
 			path = Post;
 			sourceTree = "<group>";
@@ -477,8 +492,11 @@
 				E0DDFA2B223E04A3009EB136 /* Identicon.swift in Sources */,
 				E0BB974F223F552B00D028A1 /* UIDevice+Info.swift in Sources */,
 				F60667592274CEB9004563D9 /* Like.swift in Sources */,
+				5063AF6D22F116B300B15E44 /* Comment.swift in Sources */,
 				D9DDEC822274A72B00930030 /* UIImage+base64.swift in Sources */,
 				E0BCD23922489DFB00B4E0F6 /* Status.swift in Sources */,
+				50D9304122F419E700BA6473 /* CommentsViewController.swift in Sources */,
+				5063AF6F22F1184200B15E44 /* CommentClient.swift in Sources */,
 				F65943FC227CEDF100D46C5E /* NotificationNames.swift in Sources */,
 				E0DDFA21223DFE73009EB136 /* PostCollectionViewCell.swift in Sources */,
 				E04FB2DE2249F2D300B81C8A /* StorageType.swift in Sources */,
@@ -489,6 +507,7 @@
 				E0F4B04222700427000975C0 /* ProfileViewController.swift in Sources */,
 				E0DDFA31223E181C009EB136 /* PostDetailViewController.swift in Sources */,
 				F606675B2274CEEF004563D9 /* LikeClient.swift in Sources */,
+				50D9304622F8226E00BA6473 /* CommentsTableViewCell.swift in Sources */,
 				E0BB974D223F45EA00D028A1 /* Account.swift in Sources */,
 				E0BCD23D2248A14300B4E0F6 /* RestClient.swift in Sources */,
 				E0DDFA18223DFCC8009EB136 /* Post.swift in Sources */,
@@ -501,6 +520,7 @@
 				E0DDFA27223E029A009EB136 /* PostAuthorView.swift in Sources */,
 				E0BB9751223F57C400D028A1 /* Date+timestamp.swift in Sources */,
 				E07D9031226238C5004BCDE3 /* AccountClient.swift in Sources */,
+				50D9304D22FDF8C600BA6473 /* CommentsTableClient.swift in Sources */,
 				D9DDEC842274BDFC00930030 /* CreatePostClient.swift in Sources */,
 				D9DDEC802274A4B000930030 /* CameraViewController.swift in Sources */,
 				E0BB974A223F449700D028A1 /* Secrets.swift in Sources */,

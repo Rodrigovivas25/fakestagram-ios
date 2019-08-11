@@ -28,7 +28,7 @@ class LikeUpdaterClient {
     }
     
     func like() -> Post {
-        guard let postId = self.post.id else {return self.post}
+        guard let postId = post.id else {return self.post}
         client.request("POST", path: "\(basepath)/\(postId)/like", body: nil, completionHandler: onSuccessLike(response:data:), errorHandler: onError(error:))
         var post = self.post
         post.likesCount += 1
@@ -38,7 +38,7 @@ class LikeUpdaterClient {
     }
     
     func dislike() -> Post{
-        guard let postId = self.post.id else {return self.post}
+        guard let postId = post.id else {return post}
         client.request("DELETE", path: "\(basepath)/\(postId)/like", body: nil, completionHandler: onSuccessDislike(response:data:), errorHandler: onError(error:))
         var post = self.post
         post.likesCount -= 1
@@ -68,7 +68,7 @@ class LikeUpdaterClient {
         print("Error on post request: \(err.localizedDescription)")
     }
     
-    private func sendNotification(for updatedPost: Post){
+    func sendNotification(for updatedPost: Post){
         guard let data = try? JSONEncoder().encode(updatedPost) else {return}
         NotificationCenter.default.post(name: .didLikePost, object: nil, userInfo: ["post" : data as Any, "row": row as Any])
     }

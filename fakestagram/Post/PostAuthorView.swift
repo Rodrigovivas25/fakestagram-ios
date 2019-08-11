@@ -60,5 +60,6 @@ class PostAuthorView: UIView {
         guard let author = self.author else { return }
         nameLbl.text = author.name
         avatarView.loadContent(from: author.avatarUrl())
+        
     }
 }

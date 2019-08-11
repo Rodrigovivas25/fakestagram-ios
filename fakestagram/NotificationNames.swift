@@ -10,5 +10,4 @@ import Foundation
 
 extension Notification.Name {
     static let didLikePost = Notification.Name("didLikePost")
-    
 }

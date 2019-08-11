@@ -21,11 +21,14 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     }
     
     @IBAction func onTapSnap(_ sender: Any) {
-        guard let img = UIImage(named: "meper"), let imgBase64 = img.encodedBase64() else { return }
+        /*guard let img = UIImage(named: "meper"), let imgBase64 = img.encodedBase64() else { return }
         let payload = CreatePostBase64(title: "Meper donas - \(Date().currentTimestamp())", imageData: imgBase64)
         client.create(payload: payload){post in
             print(post)
-        }
+        }*/
+        imageController.delegate = self
+        imageController.sourceType = .camera
+        present(imageController, animated: true, completion: nil)
                 
     }
     
@@ -42,6 +45,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
             client.create(payload: payload){post in
                 print(post)
             }
+            
             dismiss(animated: true, completion: nil)
         }
     }
